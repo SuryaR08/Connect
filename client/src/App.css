@@ -1,0 +1,381 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #f8d7ff 0%, #f5f0ff 100%);
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  padding: 80px;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7a56b7;
+  margin-bottom: 50px;
+}
+
+.post-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 0 10px;
+  overflow: hidden;
+  background: #f5f5f5;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.post .title {
+  height: 20%;
+  background-color: #7e57c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.post .body {
+  height: 50%;
+  padding: 20px;
+  overflow: hidden;
+  color: #555;
+}
+
+.post .footer {
+  height: 20%;
+  background-color: #7e57c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ece4e4;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: bold;
+}
+
+.likeButton{
+  height: 50%;
+  width: 30%;
+}
+
+.additional-info {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #7e57c2;
+}
+
+.post .title {
+  transition: background-color 0.3s ease;
+}
+
+.post .title:hover {
+  background-color: #5d42a6;
+}
+
+.post:hover {
+  transform: translateY(-5px); /* Move card up on hover */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  cursor: pointer;
+}
+
+.post .footer:hover {
+  background-color: #5d42a6;
+}
+
+
+.createPostPage {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5; /* Light grey background */
+}
+
+.formContainer {
+  width: 600px;
+  border: 1px solid #ccc;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  display: flex; /* Center form fields horizontally */
+  flex-direction: column; /* Align form fields vertically */
+  align-items: center; /* Center form fields horizontally */
+  padding: 30px; /* Adjust padding */
+}
+
+.formContainer input[type="text"],
+.formContainer textarea {
+  width: calc(100% - 40px); /* Adjust width */
+  padding: 12px;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* Disable resizing of textarea */
+}
+
+.formContainer input[type="text"] {
+  height: 40px; /* Height for input fields */
+}
+
+.formContainer textarea {
+  height: 120px; /* Height for textarea */
+}
+
+.formContainer button {
+  width: calc(100% - 40px); /* Adjust width */
+  padding: 14px;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #37ab3a; /* Green submit button */
+  color: rgb(248, 247, 247);
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.formContainer button:hover {
+  background-color: #035207; /* Darker green on hover */
+  font-weight: bold;
+}
+
+.formContainer span {
+  color: red;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style for input placeholders */
+::placeholder {
+  color: #aaa;
+}
+
+/* Style for input focus */
+input[type="text"]:focus,
+textarea:focus {
+  border: 2px solid #4caf50; /* Green border on focus */
+  outline: none;
+}
+
+/* Style for form labels */
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style for form title */
+.formTitle {
+  text-align: center;
+  font-size: 24px;
+  margin-top: -2%;
+}
+
+
+
+
+
+.navbar {
+  color: #955dbddb; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it's above other content */
+  padding: 15px 15px; /* Vertical padding */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+  
+}
+
+.navbar .loggedInContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.nav-link {
+  width: 100%;
+  color: #000000; /* Text color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Margin */
+  padding: 10px; /* Padding */
+  border-radius: 5px;
+  margin-left: 20px; 
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+
+}
+
+.nav-link:hover {
+  background-color: #34495e; 
+  color: #ccc;
+}
+
+.navbar button {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin: -25px 15px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px; 
+  font-weight: bold;
+  background-color: white;
+}
+
+.navbar h1 {
+  color: #67089aa6; /* Text color */
+  margin: -25px 15px; /* Margin */
+  transition: background-color 0.3s ease;
+}
+
+
+/* Style for error messages */
+.errorMessage {
+  color: red; /* Error message color */
+  font-size: 14px; /* Error message font size */
+  margin-top: 5px; /* Margin on top */
+  margin-bottom: auto;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.formField {
+  margin-bottom: 40px;
+  margin-top: 10px;
+  margin: 10px 10;
+  align-items: center;
+  width: 600px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+
+/* INDIVIDUAL POST */
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.rightSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+
+.rightSide .addCommentContainer {
+  flex: 20%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+
+.addCommentContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.addCommentContainer button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.addCommentContainer input {
+  border: 2px solid dodgerblue;
+}
+
+.rightSide .listOfComments {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listOfComments .comment {
+  width: 70%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#individual {
+  height: 500px;
+  width: 600px;
+}
+
+#individual .title,
+#individual .footer {
+  font-size: 30px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+/* LOGIN */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.loginContainer input {
+  border: 2px solid dodgerblue;
+}

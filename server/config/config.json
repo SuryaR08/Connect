@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Surya@08",
+    "database": "Connect",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Surya@08",
+    "database": "Connect",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Surya@08",
+    "database": "Connect",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

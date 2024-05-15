@@ -23,41 +23,43 @@ function Registration() {
 
   return (
     <div className="App">
-      <div className="createPostPage">
-        <div className="formContainer">
+      <Formik
+        initialValues={initialValues}
+        onSubmit={onSubmit}
+        validationSchema={validationSchema}
+      >
+        <Form className="loginContainer">
           <h2 className="formTitle">Register</h2>
-          <Formik
-            initialValues={initialValues}
-            onSubmit={onSubmit}
-            validationSchema={validationSchema}
-          >
-            <Form>
-              <div className="formField">
-                <label>Username: </label>
-                <ErrorMessage name="username" component="span" />
-                <Field
-                  autocomplete="off"
-                  type="text"
-                  id="createPostPage"
-                  name="username"
-                  placeholder="Enter Username"
-                />
-              </div>
-              <div className="formField">
-                <label htmlFor="title">Password: </label>
-                <ErrorMessage name="password" component="span" />
-                <Field
-                  autocomplete="off"
-                  type="text"
-                  id="createPostPage"
-                  name="password"
-                  placeholder="Enter Password"
-                />
-              </div>
-              <button type="submit">Register</button>
-            </Form>
-          </Formik>
-        </div>
+          <div className="loginField">
+            <label>Username: </label>
+            <ErrorMessage name="username" component="span" />
+            <Field
+              autocomplete="off"
+              type="text"
+              id="createPostPage"
+              name="username"
+              placeholder="Enter Username"
+            />
+          </div>
+          <div className="loginField">
+            <label htmlFor="title">Password: </label>
+            <ErrorMessage name="password" component="span" />
+            <Field
+              autocomplete="off"
+              type="text"
+              id="createPostPage"
+              name="password"
+              placeholder="Enter Password"
+            />
+          </div>
+          <button type="submit">Register</button>
+        </Form>
+      </Formik>
+      <div className="additional-info">
+        <p>Created by Surya</p>
+        <p>
+          &copy; <span id="year"></span> Connect App. All Rights Reserved.
+        </p>
       </div>
     </div>
   );

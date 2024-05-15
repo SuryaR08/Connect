@@ -36,7 +36,6 @@ function CreatePost() {
 
   return (
     <div className="App">
-      <div className="createPostPage">
         <div className="formContainer">
           <h2 className="formTitle">Create Post</h2>
           <Formik
@@ -74,26 +73,16 @@ function CreatePost() {
                     <div className="errorMessage">{errors.postText}</div>
                   )}
                 </div>
-                {/* <div className="formField">
-                  <label htmlFor="username">Username:</label>
-                  <Field
-                    type="text"
-                    id="createPostPage"
-                    name="username"
-                    placeholder="Enter Username"
-                    className={
-                      errors.username && touched.username ? "error" : ""
-                    }
-                  />
-                  {errors.username && touched.username && (
-                    <div className="errorMessage">{errors.username}</div>
-                  )}
-                </div> */}
                 <button type="submit">Create Post</button>
               </Form>
             )}
           </Formik>
         </div>
+        
+      
+      <div className="additional-info">
+        <p>Created by Surya</p>
+        <p>&copy; <span id="year"></span> Connect App. All Rights Reserved.</p>
       </div>
     </div>
   );

@@ -27,31 +27,33 @@ function Login() {
   };
   return (
     <div className="App">
-      <div className="createPostPage">
-        <div className="formContainer">
+      <div className="loginContainer">
           <h2 className="formTitle">Login</h2>
-          <div className="loginContainer">
-            <div className="formField">
+            <div className="loginField">
               <label>Username:</label>
               <input
                 type="text"
+                placeholder="Enter Username"
                 onChange={(event) => {
                   setUsername(event.target.value);
                 }}
               />
             </div>
-            <div className="formField">
+            <div className="loginField">
               <label>Password:</label>
               <input
                 type="password"
+                placeholder="Ente Password"
                 onChange={(event) => {
                   setPassword(event.target.value);
                 }}
               />
             </div>
-            <button onClick={login}> Login </button>
-          </div>
-        </div>
+            <button onClick={login}> Login </button> 
+      </div>
+      <div className="additional-info">
+        <p>Created by Surya</p>
+        <p>&copy; <span id="year"></span> Connect App. All Rights Reserved.</p>
       </div>
     </div>
   );

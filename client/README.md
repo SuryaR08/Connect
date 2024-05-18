@@ -1,70 +1,179 @@
-# Getting Started with Create React App
+Certainly! Adding images to your README file can help illustrate the different sections of your application. Below is an updated version of your README file with placeholders for images. You can replace the placeholder links with the actual paths to your images.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Connect
 
-In the project directory, you can run:
+Connect is a web application designed to facilitate communication between campus management, staff, students, and the placement cell. It serves as a forum where users can create posts, comment on them, like posts, and manage their profiles. This project aims to streamline the flow of information and foster engagement within the campus community.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication**: Secure login and registration system.
+- **Create Posts**: Users can create posts to share information or start discussions.
+- **Comment on Posts**: Engage with posts by adding comments.
+- **Like Posts**: Show appreciation for posts by liking them.
+- **Profile Page**: View and manage user profile, including changing the password and viewing posts created by the user.
+- **Health Check**: Ensures the backend service is running smoothly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+### Login Page
+![Login Page](path/to/your/login-page.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Home Page
+![Home Page](path/to/your/home-page.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Posts Page
+![Posts Page](path/to/your/posts-page.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Create Post Page
+![Create Post Page](path/to/your/create-post-page.png)
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Make sure you have the following installed on your system:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js (v16.x.x recommended)
+- npm (v6.x.x or later)
+- MySQL (v5.7 or later)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. **Clone the repository**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   git clone https://github.com/yourusername/connect.git
+   cd connect
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Backend Setup**:
 
-### Code Splitting
+   Navigate to the server directory and install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   cd server
+   npm install
+   ```
 
-### Analyzing the Bundle Size
+3. **Frontend Setup**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Navigate to the client directory and install dependencies:
 
-### Making a Progressive Web App
+   ```bash
+   cd ../client
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Database Setup**:
 
-### Advanced Configuration
+   - Ensure MySQL is running.
+   - Create a database named `connect`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```sql
+   CREATE DATABASE connect;
+   ```
 
-### Deployment
+   - Update the database configuration in `server/config/config.json` with your MySQL username and password.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. **Environment Variables**:
 
-### `npm run build` fails to minify
+   - Create a `.env` file in the `server` directory and add the following:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+     ```env
+     PORT=3001
+     MYSQL_HOST=localhost
+     MYSQL_USER=root
+     MYSQL_PASSWORD=yourpassword
+     MYSQL_DB=connect
+     JWT_SECRET=yourjwtsecret
+     ```
+
+   - Create a `.env` file in the `client` directory and add the following:
+
+     ```env
+     REACT_APP_API_URL=http://localhost:3001
+     ```
+
+6. **Running the Application**:
+
+   - Start the backend server:
+
+     ```bash
+     cd ../server
+     npm start
+     ```
+
+   - Start the frontend server:
+
+     ```bash
+     cd ../client
+     npm start
+     ```
+
+   - Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+1. **Register**: Create a new account.
+2. **Login**: Access your account using your credentials.
+3. **Create Posts**: Share information or start discussions by creating posts.
+4. **Comment**: Engage with posts by adding comments.
+5. **Like**: Show appreciation by liking posts.
+6. **Profile**: Manage your profile, view your posts, and change your password.
+
+## API Endpoints
+
+Here are some key API endpoints:
+
+- **User Authentication**:
+  - `POST /auth/register`: Register a new user.
+  - `POST /auth/login`: Login a user.
+
+- **Posts**:
+  - `GET /posts`: Get all posts.
+  - `POST /posts`: Create a new post.
+  - `GET /posts/:id`: Get a single post.
+  - `DELETE /posts/:id`: Delete a post.
+
+- **Comments**:
+  - `POST /comments`: Add a comment to a post.
+  - `GET /comments/:postId`: Get all comments for a post.
+
+- **Likes**:
+  - `POST /likes`: Like a post.
+  - `GET /likes/:postId`: Get all likes for a post.
+
+- **Profile**:
+  - `GET /profile`: Get user profile.
+  - `PUT /profile/password`: Change user password.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Make sure to follow the coding standards and write tests for any new features or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or feedback, please contact me at [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+Feel free to replace the placeholder image paths (`path/to/your/image.png`) with the actual paths to the images you want to include. You can upload the images to your GitHub repository and use the raw URLs to display them in the README file.

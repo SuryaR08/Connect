@@ -1,3 +1,7 @@
+Certainly! Adding images to your README file can help illustrate the different sections of your application. Below is an updated version of your README file with placeholders for images. You can replace the placeholder links with the actual paths to your images.
+
+---
+
 # Connect
 
 Connect is a web application designed to facilitate communication between campus management, staff, students, and the placement cell. It serves as a forum where users can create posts, comment on them, like posts, and manage their profiles. This project aims to streamline the flow of information and foster engagement within the campus community.
@@ -5,12 +9,14 @@ Connect is a web application designed to facilitate communication between campus
 ## Table of Contents
 
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Contributing](#contributing)
+- [License](#license)
 - [Contact](#contact)
 
 ## Features
@@ -21,6 +27,27 @@ Connect is a web application designed to facilitate communication between campus
 - **Like Posts**: Show appreciation for posts by liking them.
 - **Profile Page**: View and manage user profile, including changing the password and viewing posts created by the user.
 - **Health Check**: Ensures the backend service is running smoothly.
+
+## Screenshots
+
+### Login Page
+![Login Page](path/to/your/login-page.png)
+
+### Home Page
+![Home Page](path/to/your/home-page.png)
+
+### Posts Page
+![Posts Page](path/to/your/posts-page.png)
+
+### Create Post Page
+![Create Post Page](path/to/your/create-post-page.png)
+
+### Profile Page
+![Profile Page](path/to/your/create-post-page.png)
+
+### Change Password Page
+![Change Password Page](path/to/your/create-post-page.png)
+
 
 ## Getting Started
 
@@ -146,6 +173,14 @@ Here are some key API endpoints:
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Make sure to follow the coding standards and write tests for any new features or bug fixes.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Contact
 
-For any inquiries or feedback, please contact me at [suryaraja890@gmail.com](mailto:suryaraja890@gmail.com).
+For any inquiries or feedback, please contact me at [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+Feel free to replace the placeholder image paths (`path/to/your/image.png`) with the actual paths to the images you want to include. You can upload the images to your GitHub repository and use the raw URLs to display them in the README file.

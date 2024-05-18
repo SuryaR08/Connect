@@ -1,26 +1,21 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "Surya@08",
-    "database": "connect",
-=======
-    "password": "YOUR PASSWORD",
+    "password": "",
     "database": "Connect",
->>>>>>> 1e64443f428980a45074542d16adbc96e7185670
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Surya@08",
+    "password": "",
     "database": "connect",
     "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "Surya@08",
+    "password": "",
     "database": "connect",
     "host": "localhost",
     "dialect": "mysql"

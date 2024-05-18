@@ -37,10 +37,10 @@ Connect is a web application designed to facilitate communication between campus
 ![Home Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(323).png)
 
 ### Posts Page
-![Posts Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(325).png)
+![Posts Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(326).png)
 
 ### Create Post Page
-![Create Post Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(323).png)
+![Create Post Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(324).png)
 
 ### Profile Page
 ![Profile Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(325).png)

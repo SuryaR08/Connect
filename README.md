@@ -1,7 +1,3 @@
-Certainly! Adding images to your README file can help illustrate the different sections of your application. Below is an updated version of your README file with placeholders for images. You can replace the placeholder links with the actual paths to your images.
-
----
-
 # Connect
 
 Connect is a web application designed to facilitate communication between campus management, staff, students, and the placement cell. It serves as a forum where users can create posts, comment on them, like posts, and manage their profiles. This project aims to streamline the flow of information and foster engagement within the campus community.

@@ -27,7 +27,7 @@ Connect is a web application designed to facilitate communication between campus
 ## Screenshots
 
 ### Login Page
-![Login Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(322).png)
+[![Login Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(322).png)](https://connect-frontend-two.vercel.app/login)
 
 ### Home Page
 ![Home Page](https://github.com/SuryaR08/Connect/blob/main/Screenshots/Screenshot%20(323).png)

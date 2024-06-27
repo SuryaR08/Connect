@@ -2,6 +2,8 @@
 
 Connect is a web application designed to facilitate communication between campus management, staff, students, and the placement cell. It serves as a forum where users can create posts, comment on them, like posts, and manage their profiles. This project aims to streamline the flow of information and foster engagement within the campus community.
 
+Check out : https://connect-frontend-two.vercel.app/login
+
 ## Table of Contents
 
 - [Features](#features)
